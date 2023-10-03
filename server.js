@@ -26,10 +26,10 @@ app.use("/api/auth",require("./routes/userRouter"))
 app.use("/api/auth/transection",require("./routes/expenseRouter"))
 
 //read static files
-app.use(express.static(path.join(__dirname, './build')))
+app.use(express.static(path.join(__dirname, './frontend/build')))
 
 app.get("*", function(_,res){
-res.sendFile(path.join(__dirname, "./build/index.html"),function(err){
+res.sendFile(path.join(__dirname, "./frontend/build/index.html"),function(err){
     res.status(500).send(err);
 })
 })
