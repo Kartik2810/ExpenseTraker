@@ -5,6 +5,7 @@ const registerController=async(req,res)=>{
     try {
     const user =  new User(req.body);
     await user.save()
+    res.status(200).send({message:"register successfull"})
     res.send(user)
     } catch (error) {
             console.log({message:`error in registerController error = ${error}`})

@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.content {
+  height: 100vh;
+}
+#navbarNav {
+  justify-content: end;
+}
+.register-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 3px gray;
+}
+.my-filter {
+  font-size: 25px;
+  font-weight: bold;
+}
+.icon {
+  font-size: 40px;
+  cursor: pointer;
+}
+.nav {
+ 
+  background-color: rgb(58, 169, 169) !important;
+}
+.title {
+  padding: 1.3rem;
+  color: aliceblue;
+  background-color: rgb(38, 133, 133);
+}
+
+.footer {
+  width: 100vw !important;
+  background-color: rgb(38, 133, 133) !important;
+}
+.tt {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(58, 169, 169);
+}
+.form {
+  width: 400px;
+
+  padding: 1rem;
+  border: 0.4rem solid rgb(58, 169, 169);
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 1rem black;
+}
+.input {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media(max-width:510px){
+  html{
+    width: 500px !important;
+    height: 500px !important;
+  }
+  .footer{
+    width: 500px !important;
+    height: 500px !important;
+  }
+}
